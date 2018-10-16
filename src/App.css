@@ -1,0 +1,184 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.App-todo-heading{
+  background: teal;
+  margin: 0px;
+  padding: 10px;
+  color: #fff;
+}
+.App-compt-heading{
+  background: teal;
+  margin: 0px;
+  padding: 10px;
+  color: #fff;
+}
+.msg{
+  color: #fff;
+  text-align: left;
+  margin-bottom: 10px;
+  padding: 10px;
+  position: relative;
+}
+.msg-span{
+  width: calc(100% - 30px);
+  display: inline-block;
+}
+.msg-closebtn{
+  width: 30px;
+  border: 0px;
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 30px;
+  transform: translateY(-50%);
+}
+.msg.error{
+  background: #f85352;
+}
+.msg.sucess{
+  background:#0bbd0b;
+}
+.hide{
+  display: none;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+
+.width50per{
+  width: 49%;
+  margin: 0.5%;
+}
+.displayInlineBlock{
+  display: inline-block;
+  vertical-align: text-top;
+}
+.todo-component{
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 3%;
+  padding-top: 10px;
+}
+.todo-add-container{
+  margin-bottom: 20px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 20px;
+}
+.todo-textbox{
+  height: 40px;
+  width: 100%;
+  padding: 0px 20px;
+  font-size: 16px;
+}
+.btn{
+  padding: 5px;
+  margin: 10px;
+  min-width: 160px;
+  background: #01acca;
+  border: 0px;
+  box-shadow: 1px 3px 10px #00000059;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.btn-done{
+  background: teal;
+  display: inline-block;
+  line-height: 25px;
+  padding: 0px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 20px;
+  font-size: 12px;
+  min-width: auto;
+  clear: both;
+  margin: 0px;
+  margin-top: 7px;
+  margin-right: 20px;
+}
+.btn:hover,.btn:active,.btn:focus{
+  transform: scale(1.10);
+}
+.btn-notdone{
+  background:rgba(255, 0, 0, 0.67);
+}
+.list{
+  border-left: 1px solid #d0d0d0;
+  border-right: 1px solid #d0d0d0;
+  max-height: 62vh;
+  overflow: auto;
+}
+.nochild,.list li:last-child{
+  border-bottom: 1px solid #d0d0d0;
+}
+.list li{
+  line-height: 40px;
+}
+.list li:nth-child(2n){
+  background-color: #e8e8e8;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+}
+.count {
+  font-size: 15px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  background: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .width50per{
+    width: 100%;
+    margin: 0.5%;
+    margin-bottom:30px;
+  }
+  .list{
+    max-height: 100%;
+  }
+}
